@@ -10,7 +10,7 @@ header {
     text-align: center;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px 50px 50px;
+    padding: 20px 103px 50px 97px;
 } 
 
 .title {
@@ -26,7 +26,7 @@ nav {
     padding: 0px 50px;
 }
 
-ul {
+.menu {
     list-style: none;
     gap: 20px;
     display: flex;
@@ -36,7 +36,7 @@ ul {
     font-size: 18px;
 }
 
-ul li a {
+.menu a {
     text-decoration: none;
 }
 
@@ -46,20 +46,17 @@ ul li a {
     padding: 0px 0px 0px 50px;
 }
 
-main {
+
+#home {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 100px 50px 40px 50px;
+    padding: 209px 103px 271px 97px;
 }
 
 #container-infa {
     margin: 0px 100px 0px 0px;
     
-}
-
-p {
-    margin: 0;
 }
 
 #container-infa h2 {
@@ -75,7 +72,7 @@ p {
     font-weight: 800;
     font-style: normal;
     font-size: 100px;
-    line-height: 1.2;
+    margin: 0;
 }
 
 .container-infa-based {
@@ -83,14 +80,20 @@ p {
     font-weight: 500;
     font-style: normal;
     font-size: 28px;
+    margin: 0;
     
+}
+
+#container-img img {
+    max-width: 100%;
+    /* height: auto; */
 }
 
 #container-img {
     margin: 0px 0px 0px 100px;
 }
 
-button {
+.button-resume {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -113,4 +116,148 @@ button:hover {
 button:active {
     color: white;
     background-color: #474306;
+}
+
+/* ABOUT */
+.about {
+
+}
+h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 100px;
+    color: #F7F197;
+    margin: 0px;
+}
+p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    margin: 0px;
+}
+#about h3 {
+    margin: auto;
+    padding-left: 97px;
+    padding-bottom: 32px;
+    /* padding: 0px 1002px 32px 97px;
+    margin: 0px; */
+}
+.about-text {
+    width: 900px;
+    height: 132px;
+    padding: 0px 443px 145px 97px;
+}
+.experience {
+    display: grid;
+    row-gap: 80px;
+    grid-template-columns: minmax(650px, 931px);
+    justify-items: center;
+    margin: 0px 156px 183px 353px;   
+}
+
+.exp-item strong {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px;
+}
+
+/* WORK */
+#work {
+    margin-bottom: 50px;
+}
+#work h3 {
+    padding: 0px 1051px 32px 97px;
+}
+.work-text {
+    width: 900px;
+    height: 132px;
+    padding: 0px 443px 124px 97px;
+}
+.work-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 120px;
+    padding: 0px 103px 124px 97px;
+}
+.work-item img {
+    width: 100%;
+}
+.project-date {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 15px;
+}
+h4 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px;
+}
+
+/* CONTACT */
+#contact h3 {
+    padding: 0px 907px 49px 97px;
+}
+.contact-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 59px;
+    padding: 0px 204px 90px 97px;
+}
+
+.contact-items img {
+    width: 100%;
+
+}
+.contact-info-text {
+    padding-bottom: 21px;
+}
+
+.tg, .inst, .vk {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #F5EE84;
+    color: #03045E;
+    border-radius: 50%;
+    display: none; /* По умолчанию скрываем */
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s;
+}
+
+/* Показываем кнопку, когда прокручиваем страницу вниз */
+@media (min-height: 500px) {
+    .scroll-to-top {
+        display: flex;
+    }
+}
+
+.scroll-to-top:hover {
+    background-color: #474306;
+}
+
+@media (max-width: 768px) {
+    .work-items,
+    .contact-items {
+        grid-template-columns: 1fr;
+    }
 }

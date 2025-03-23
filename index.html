@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <div id="top"></div>
     <header>
         <div class="title">Luba Kim</div>
         <nav>
-            <ul>
-                <li class="menu"><a href="home">Home</a></li>
-                <li class="menu"><a href="about">About</a></li>
-                <li class="menu"><a href="work">Work</a></li>
+            <ul class="menu">
+                <li class="menu-contact"><a href="#contact">Contact</a></li>
+                <li class="menu-about"><a href="#about">About</a></li>
+                <li class="menu-work"><a href="#work">Work</a></li>
             </ul>
         </nav>
         <div class="social-icons">
@@ -26,16 +31,81 @@
         </div>
     </header>
     <main>
-        <section id="container-infa">
-            <h2>Hello, I'm Luba Kim,</h2>
-            <p class="container-infa-web">WEB<br>Developer</p>
-            <p class="container-infa-based">based in Russia.</p>
-            <button>Resume</button>
+
+        <section id="home">
+            <div id="container-infa">
+                <h2>Hello, I'm Luba Kim,</h2>
+                <p class="container-infa-web">WEB<br>Developer</p>
+                <p class="container-infa-based">based in Russia.</p>
+                <button class="button-resume">Resume</button>
+            </div>
+
+            <div id="container-img">
+                <img src="photo-of-me.png" alt="Photo of me">
+            </div>
         </section>
 
-        <div id="container-img">
-            <img src="photo of me.png" alt="Photo of me">
-        </div>
+        <section id="about">
+            <h3>about.</h3>
+            <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id
+                phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum diam.</p>
+
+            <div class="experience">
+                <div class="exp-item">
+                    <span>● <strong>2014–2018</strong></span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum diam.</p>
+                </div>
+                <div class="exp-item">
+                    <span>● <strong>2018–2020</strong></span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum diam.</p>
+                </div>
+                <div class="exp-item">
+                    <span>● <strong>2020 – Present</strong></span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum diam.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="work">
+            <h3>work.</h3>
+            <p class="work-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id
+                phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum diam.</p>
+
+            <div class="work-items">
+                <div class="work-item">
+                    <img src="work1.png" alt="a man at work">
+                    <p><em>November 24, 2019</em></p>
+                    <h4>Some Case Study</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed aliquam sollicitudin rhoncus
+                        morbi. Tincidunt quam sem elit a convallis. Eget ipsum, velit vitae eu nunc, consequat, at.</p>
+                </div>
+                <div class="work-item">
+                    <img src="work2.png" alt="laptop">
+                    <p><em>November 24, 2019</em></p>
+                    <h4>Some Case Study</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed aliquam sollicitudin rhoncus
+                        morbi. Tincidunt quam sem elit a convallis. Eget ipsum, velit vitae eu nunc, consequat, at.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h3>contact.</h3>
+            <div class="contact-items">
+                <img src="contact.png" alt="pen">
+                <div class="contsct-info">
+                    <p class="contct-info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id
+                        phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum
+                        diam.</p>
+                    <a class="tg" href="tg">johndoe@mail.com</a><br>
+                    <a class="inst" href="twit">jtwitter.com/johndoe</a><br>
+                    <a class="vk" href="behance">behance.com/johndoe</a>
+                </div>
+            </div>
+        </section>
+
     </main>
+    <a href="#top" class="scroll-to-top">↑</a>
 </body>
+
 </html>
