@@ -5,15 +5,15 @@ body {
     padding: 0;
 }
 
-header {
+.block-row {
     display: flex;
     text-align: center;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px 103px 50px 97px;
-} 
+    align-items: flex-start;
+    padding: 34px 103px 50px 97px;
+}
 
-.title {
+.block-title {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -21,29 +21,48 @@ header {
     text-shadow: 0 3px 5px #03045E;
     flex-shrink: 0;
 }
-
-nav {
+/* nav {
     padding: 0px 50px;
-}
-
-.menu {
+} */
+.block-menu {
+    display: flex;
     list-style: none;
     gap: 20px;
-    display: flex;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 18px;
-}
 
-.menu a {
+}
+.block-menu a {
     text-decoration: none;
 }
 
-.social-icons {
+.menu-about:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+.menu-work:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+.menu-contact:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+.block-icons {
     display: flex;
-    gap: 20px;
+    gap: 2px;
     padding: 0px 0px 0px 50px;
+    /* flex-shrink: 0; */
+}
+.block-icons img {
+    width: 80%;
+}
+
+a:hover {
+    transform: scale(1.2);
 }
 
 
@@ -54,12 +73,12 @@ nav {
     padding: 209px 103px 271px 97px;
 }
 
-#container-infa {
+.container-infa {
     margin: 0px 100px 0px 0px;
     
 }
 
-#container-infa h2 {
+.container-infa h2 {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -84,12 +103,11 @@ nav {
     
 }
 
-#container-img img {
+.container-img img {
     max-width: 100%;
-    /* height: auto; */
 }
 
-#container-img {
+.container-img {
     margin: 0px 0px 0px 100px;
 }
 
@@ -134,22 +152,26 @@ p {
     font-size: 24px;
     margin: 0px;
 }
+
+#about {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
 #about h3 {
-    margin: auto;
     padding-left: 97px;
     padding-bottom: 32px;
-    /* padding: 0px 1002px 32px 97px;
-    margin: 0px; */
 }
 .about-text {
-    width: 900px;
-    height: 132px;
     padding: 0px 443px 145px 97px;
+    text-align: justify;
 }
+
 .experience {
     display: grid;
     row-gap: 80px;
-    grid-template-columns: minmax(650px, 931px);
+    grid-template-columns: 1fr;
     justify-items: center;
     margin: 0px 156px 183px 353px;   
 }
@@ -161,18 +183,27 @@ p {
     font-size: 24px;
 }
 
+.exp-item p {
+    text-align: justify;
+}
+
 /* WORK */
 #work {
-    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    
 }
+
 #work h3 {
-    padding: 0px 1051px 32px 97px;
+    padding-left: 97px;
+    padding-bottom: 32px;
 }
 .work-text {
-    width: 900px;
-    height: 132px;
-    padding: 0px 443px 124px 97px;
+    padding: 0px 443px 145px 97px;
+    text-align: justify;
 }
+
 .work-items {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -194,6 +225,13 @@ h4 {
     font-style: normal;
     font-size: 24px;
 }
+.project-date-text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    text-align: justify;
+}
 
 /* CONTACT */
 #contact h3 {
@@ -201,16 +239,17 @@ h4 {
 }
 .contact-items {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 440px 1fr;
     align-items: center;
+    text-align: justify;
     gap: 59px;
     padding: 0px 204px 90px 97px;
 }
 
 .contact-items img {
-    width: 100%;
-
+    width: 110%;
 }
+
 .contact-info-text {
     padding-bottom: 21px;
 }
@@ -221,7 +260,43 @@ h4 {
     font-style: normal;
     font-size: 24px;
 }
+h5 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    color: #03045E;
+    padding-left: 97px;
+}
+form {
+    margin: 0px 103px 50px 97px;
+}
+.btn-custom {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #474306;
+    background-color: #F5EE84;
+    border-radius: 8px;
+    border: 2px solid #474306;
+    width: 158px;
+    height: 61px;
+    cursor: pointer;
+    margin: 30px 0px 30px 0px;
+}
 
+.btn-custom:hover {
+    color: #03045E;
+    text-decoration: underline;
+}
+
+.btn-custom:active {
+    color: white;
+    background-color: #474306;
+}
+
+/* Кнопка наверх */
 .scroll-to-top {
     position: fixed;
     bottom: 20px;
@@ -247,14 +322,248 @@ h4 {
         display: flex;
     }
 }
-
 .scroll-to-top:hover {
     background-color: #474306;
 }
 
-@media (max-width: 768px) {
-    .work-items,
+/* Стили для 1200 */
+@media (max-width: 1200px) {
+    h3 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .block-row {
+        padding: 34px 20px 40px 20px;
+    }
+    .block-title {
+        font-size: 18px;
+    }
+
+    .block-menu {
+        font-size: 16px;
+    }
+    /* .block-icons {
+        column-gap: 1px;
+    } */
+    .block-icons img {
+        width: 70%;
+    }
+
+
+    #home {
+        padding: 0px;
+        padding: 30px 20px 30px 20px;
+    }
+    .container-infa h2 {
+        font-size: 26px;
+    }
+    .container-infa-web {
+        font-size: 90px;
+    }
+    .container-infa-based {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 1200px) {
+    #about h3 {
+        padding: 30px 20px 20px 20px;
+    }
+    .about-text {
+        padding: 0px;
+        padding: 0px 20px 40px 20px;
+        font-size: 16px;
+    }
+    .experience {
+        margin: 0px;
+        padding: 0px 20px 30px 20px;
+        gap: 40px;
+    }
+    .exp-item strong, p{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1200px) {
+    #work h3 {
+        padding: 30px 20px 20px 20px;
+    }
+    .work-text {
+        padding: 0px;
+        padding: 0px 20px 40px 20px;
+    }
+    .work-items {
+        grid-template-columns: 1fr 1fr;
+        padding: 0px 20px 30px 20px;
+        gap: 80px;
+    }
+    .project-date {
+        font-size: 12px;
+    }
+    h4 {
+        font-size: 16px;
+    }
+    .project-date-text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1200px) {
+    #contact h3 {
+        padding: 30px 20px 20px 20px;
+    }
     .contact-items {
         grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 0px 20px 50px 20px;
     }
+    .contact-items img {
+        width: 100%;
+    }
+    .contact-info-text, .tg, .inst, .vk {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1200px) {
+    h5 {
+        padding-left: 20px;
+        font-size: 16px;
+    }
+    form {
+        margin: 0px 20px 50px 20px;
+    }
+}
+
+/* Стили для мобильных устройств */
+@media (max-width: 576px) {
+    h3 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .block-row {
+        padding: 34px 20px 30px 20px;
+    }
+    .block-title {
+        font-size: 10px;
+        padding: 0px 30px 0px 0px;
+    }
+    .block-menu {
+        font-size: 10px;
+        gap: 5px;
+    }
+    .block-icons {
+        column-gap: 1px;
+    }
+    .block-icons img {
+        width: 50%;
+    }
+
+    #home {
+        padding: 0px;
+        padding: 30px 20px 30px 20px;
+    }
+    .container-infa h2 {
+        font-size: 20px;
+    }
+    .container-infa-web {
+        font-size: 50px;
+    }
+    .container-infa-based {
+        font-size: 20px;
+    }
+    .button-resume {
+        font-size: 12px;
+        border-radius: 6px;
+        width: 79px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    #about h3 {
+        padding: 30px 20px 20px 20px;
+    }
+    .about-text {
+        padding: 0px;
+        padding: 10px 20px 20px 20px;
+        font-size: 14px;
+    }
+    .experience {
+        margin: 0px;
+        padding: 0px 20px 30px 20px;
+        gap: 40px;
+    }
+    .exp-item span {
+        font-size: 60%;
+        
+    }
+    .exp-item strong, p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    #work h3 {
+        padding: 30px 20px 20px 20px;
+    }
+    .work-text {
+        padding: 0px;
+        padding: 0px 20px 20px 20px;
+    }
+    .work-items {
+        grid-template-columns: 1fr;
+        padding: 0px 20px 20px 20px;
+        gap: 50px;
+    }
+    .project-date {
+        font-size: 10px;
+    }
+    h4 {
+        font-size: 14px;
+    }
+    .project-date-text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    #contact h3 {
+        padding: 30px 20px 20px 20px;
+    }
+    .contact-items {
+        grid-template-columns: 1fr;
+        padding: 0px 20px 50px 20px;
+    }
+    .contact-items img {
+        width: 100%;
+    }
+    .contact-info-text, .tg, .inst, .vk {
+        font-size: 12px;
+    }
+    .btn-custom {
+            font-size: 12px;
+            border-radius: 6px;
+            width: 79px;
+            height: 30px;
+    }
+}
+
+
+/* Анимация */
+@media (min-width: 1200px) {
+@keyframes smoke {
+    0% { transform: translateY(0) scale(0); }
+    50% { transform: translateY(-10px) scale(1.1); }
+    100% { transform: translateY(-30px) scale(1.2); opacity: 0; }
+}
+.container-infa-web {
+    animation-name: smoke;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
 }
