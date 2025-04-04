@@ -130,6 +130,7 @@ h3 {
     color: #F7F197;
     margin: 0px;
 }
+
 p {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -137,6 +138,7 @@ p {
     font-size: 24px;
     margin: 0px;
 }
+
 #about h3 {
     margin: auto;
     padding-left: 97px;
@@ -144,11 +146,13 @@ p {
     /* padding: 0px 1002px 32px 97px;
     margin: 0px; */
 }
+
 .about-text {
     width: 900px;
     height: 132px;
     padding: 0px 443px 145px 97px;
 }
+
 .experience {
     display: grid;
     row-gap: 80px;
@@ -168,9 +172,11 @@ p {
 #work {
     margin-bottom: 50px;
 }
+
 #work h3 {
     padding: 0px 1051px 32px 97px;
 }
+
 .work-text {
     width: 900px;
     height: 132px;
